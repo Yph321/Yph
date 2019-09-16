@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/Game.js"></script>
+    <script src="js/Background.js"></script>
+    <script src="js/sai.js"></script>
+    <script src="js/underscroe.min.js"></script>
+    <script src="js/Mydeche.js"></script>
+    <script src="js/saimo.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: black;
+        }
+        
+        canvas {  
+            position: relative;
+            left: 30%;
+            overflow: hidden;
+        }
+        
+        video {
+            width: 0;
+            height: 0;
+        }
+        
+        .p1 {
+            position: absolute;
+            top: 5%;
+            left: 21%;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+            color: blue;
+        }
+        
+        .p2 {
+            position: absolute;
+            top: 5%;
+            left: 75%;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+            color: blue;
+        }
+        
+        .p3 {
+            position: absolute;
+            top: 50%;
+            left: 21%;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+            color: blue;
+        }
+        
+        .p4 {
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <audio src="video/3.mp3" class="a3"></audio>
+    <audio src="video/4.mp3" class="a4"></audio>
+    <video src="video/5.mp4" autoplay muted></video>
+    <p class="p1">↑键暂停</p>
+    <p class="p2">↓键继续</p>
+    <p class="p3">←键左移</p>
+    <p class="p4">→键右移</p>
+</body>
+
+</html>
+<script>
+    var game = new Game
+</script>
